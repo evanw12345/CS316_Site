@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <title>CS316 Project 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div id="include"></div>
+    <div class=containercontainer>
+        <div class="contcontainer">
+            <div class="card1 contcard">
+                <h2>CS316-001 Project 3: Evan Wells</h2>
+                <p>The internet sample has revolutionized society. There are many wonderful things accessable with the
+                    internet. However, some users upload seemingly abstract content. Some of this content takes the form
+                    of internet memes, abstract videos, and strange websites.</p>
+            </div>
+            <div class="card1 contcard">
+                <h3>In this iteration of my CS 316 project,</h3>
+                <ul>
+                    <li>Admin tools page created.</li>
+                    <li>Table detailing users' account information displayed there. For now, temporary data has been
+                        filled in, but will eventually display users who have created accounts.</li>
+                    <li>Login form added. Will eventually allow for individual
+                        accounts based on username and password.</li>
+                    <li>Added content upload form. Click the "&#43;" to access. Will eventually allow users who are
+                        logged in to upload content to the site.</li>
+                    <li>Refactored header to be included using jquery and added script to handle setting the class
+                        "active" to the appropriate link in the nav bar</li>
+                </ul>
+            </div>
+            <div class="contcard">
+                <img src="images/cow.png" title="this is cow" alt="Some alt text">
+                <details>
+                    <summary>Aerodynamics of a Cow</summary>
+                    Originally uploaded to Reddit, the image is a
+                    representation of the aerodynamics of a cow.
+                </details>
+            </div>
+            <div class="contcard">
+                <img src="images/syoss89fhhf21.png" title="picture" alt="Some alt text" style="width: 100%;" />
+                <br>
+                <details>
+                    <summary>Bowser eats milk with cereal</summary> When he doesn't have milk in his cereal, he is mad!
+                </details>
+            </div>
+            <div class="contcard">
+                <p>Some relevant links</p>
+                <ul>
+                    <li><a href="https://www.google.com">Google</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Inconspicuous link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        include();
+        setTimeout(function () { assignActive(); }, 75);
+    </script>
+
+</body>
+
+</html>

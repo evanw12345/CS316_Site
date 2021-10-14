@@ -1,0 +1,40 @@
+<header>
+    <div id="logo">
+        <img src="images/logo.jpg" alt="Site Logo" />
+    </div>
+    <h1 class="title">The Other Side of the Internet</h1>
+</header>
+<div class="nav">
+    <a href="index.html" id="link1">Home</a>
+    <a href="images.html" id="link2">Images</a>
+    <a href="videos.html" id="link3">Videos</a>
+    <a href="admin.html" id="link4">Admin</a>
+    <a href="test.php">TESTTESTEST</a>
+    <a style="float: right;"><button
+            onclick="document.getElementById('popup_ID').style.display='block'">Login</button></a>
+    <a style="float:right;" href="usrUpload.html" id="link5">&#43;</a>
+</div>
+
+<!-- LOGIN FORM -->
+<div id="popup_ID" class="popup">
+    <form class="popup-content animate" method="POST" action="http://examples.funwebdev.com/process.php">
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" name="username" required><br><br>
+            <label for="pswd">Password</label>
+            <input type="password" name="pswd" pattern="(?=.*[A-Z])(?=.*\d).{8,}"
+                title="Password must include a number, uppercase letter, and be at least 8 characters."
+                required><br><br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    var popup = document.getElementById('popup_ID');
+    window.onclick = function (event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+</script>
