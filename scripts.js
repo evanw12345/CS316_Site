@@ -14,7 +14,7 @@ function assignActive() {
             var element = document.getElementById("link3");
             element.classList.add("active");
             break;
-        case "/admin.html":
+        case "/admin.php":
             var element = document.getElementById("link4");
             element.classList.add("active");
             break;
@@ -22,6 +22,9 @@ function assignActive() {
             var element = document.getElementById("link5");
             element.classList.add("active");
             break;
+        case "/test.php":
+            var element = document.getElementById("link6");
+            element.classList.add("active");
     }
 }
 
