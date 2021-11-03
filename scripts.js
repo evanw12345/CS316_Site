@@ -2,15 +2,15 @@ var url = window.location.pathname;
 console.log(url);
 function assignActive() {
     switch (url) {
-        case "/index.html":
+        case "/index.php":
             var element = document.getElementById("link1");
             element.classList.add("active");
             break;
-        case "/images.html":
+        case "/images.php":
             var element = document.getElementById("link2");
             element.classList.add("active");
             break;
-        case "/videos.html":
+        case "/videos.php":
             var element = document.getElementById("link3");
             element.classList.add("active");
             break;
@@ -18,7 +18,7 @@ function assignActive() {
             var element = document.getElementById("link4");
             element.classList.add("active");
             break;
-        case "/usrUpload.html":
+        case "/usrUpload.php":
             var element = document.getElementById("link5");
             element.classList.add("active");
             break;
@@ -28,7 +28,4 @@ function assignActive() {
     }
 }
 
-function include() {
-    $("#include").load("common.html");
-}
 
