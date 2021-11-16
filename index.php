@@ -3,7 +3,7 @@
     <div class=containercontainer>
         <div class="contcontainer">
             <div class="card1 contcard">
-                <h2>CS316-001 Project 4: Evan Wells</h2>
+                <h2>CS316-001 Project 6: Evan Wells</h2>
                 <p>The internet sample has revolutionized society. There are many wonderful things accessable with the
                     internet. However, some users upload seemingly abstract content. Some of this content takes the form
                     of internet memes, abstract videos, and strange websites.</p>

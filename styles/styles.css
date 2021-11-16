@@ -9,9 +9,14 @@
 
 body {
     background-color: rgba(40, 45, 112, 0.76);
+    transition: ease-in-out 0.25s;
 }
 
-/* Header */
+/* ---------------------------------------------------------------- */
+
+/*                         Site Header                              */
+
+/* ---------------------------------------------------------------- */
 
 header {
     position: relative;
@@ -42,7 +47,11 @@ header {
     background-size: cover;
 }
 
-/* nav bar */
+/* ---------------------------------------------------------------- */
+
+/*                         Navigation Bar                           */
+
+/* ---------------------------------------------------------------- */
 
 .nav {
     overflow: hidden;
@@ -82,12 +91,22 @@ header {
     color: white;
 }
 
-/*page content*/
+/* ---------------------------------------------------------------- */
+
+/*                         Page Content Styles                      */
+
+/* ---------------------------------------------------------------- */
+
+.altcard {
+    width: 25%;
+    float: right;
+    margin: auto 4px;
+}
 
 .containercontainer {
     width: 75%;
     background-color: var(--container-backgound-color);
-    padding: 1%;
+    padding: 0.75%;
     border-radius: 15px;
     margin: auto;
 }
@@ -108,11 +127,11 @@ header {
     border-radius: 10px;
     flex: 1 1 23%;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-content: center;
     justify-content: center;
     margin: 1%;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.25s;
 }
 
 .contcard:hover {
@@ -126,8 +145,8 @@ header {
 
 .imagecard {
     background-color: white;
-    padding: 0.5%;
     overflow: auto;
+    padding: 0.25%;
     border-radius: 10px;
     flex: 1 1 23%;
     display: flex;
@@ -139,7 +158,19 @@ header {
 }
 
 .imagecard:hover {
-    transform: scale(1.3);
+    transform: scale(1.35);
+}
+
+.imagecard p {
+    position: absolute;
+    visibility: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.imagecard:hover p {
+    visibility: visible;
 }
 
 .imagecard img {
@@ -149,18 +180,22 @@ header {
 }
 
 .card1 {
-    flex: 2 0 40%;
+    flex: 2 0 48%;
 }
 
 @media (max-width: 1150px) {
     .nav a {
         padding: 1% 2%;
     }
+    .imagecontainercontainer {
+        width: 100%;
+    }
     .containercontainer {
         width: 100%;
     }
-    .card1 {
-        flex: 1 1 100%;
+    .altcard {
+        width: 100%;
+        margin: 4px;
     }
     .contcard {
         flex: 1 1 48%;
@@ -174,12 +209,6 @@ header {
 }
 
 @media (max-width: 750px) {
-    .containercontainer {
-        width: 100%;
-    }
-    .card1 {
-        flex: 1 1 100%;
-    }
     .contcard {
         flex: 1 1 100%;
     }
@@ -188,14 +217,20 @@ header {
     }
 }
 
-/* Scrollbar */
+/* ---------------------------------------------------------------- */
+
+/*                        Scrollbar styles                          */
+
+/* ---------------------------------------------------------------- */
 
 ::-webkit-scrollbar {
     width: 10px;
+    border-radius: 15px;
 }
 
 ::-webkit-scrollbar-track {
     background-color: var(--container-backgound-color);
+    border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb {
