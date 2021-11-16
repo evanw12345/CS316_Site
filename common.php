@@ -5,9 +5,9 @@
     <title>CS316 Project 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" type="text/css" href="login.css" />
-    <link rel="stylesheet" type="text/css" href="tables.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/login.css" />
+    <link rel="stylesheet" type="text/css" href="styles/tables.css" />
     <script src="jquery-3.6.0.min.js"></script>
     <script src="scripts.js"></script>
 </head>
@@ -22,7 +22,7 @@
     <div class="nav">
         <a href="index.php" id="link1">Home</a>
         <a href="images.php" id="link2">Images</a>
-        <a href="videos.php" id="link3">Videos</a>
+        <a href="videos.php" id="link3">Lore</a>
         <a href="admin.php" id="link4">Admin</a>
         <a href="test.php" id="link6">DB TEST</a>
         <a style="float: right;"><button onclick="document.getElementById('popup_ID').style.display='block'">Login</button></a>
