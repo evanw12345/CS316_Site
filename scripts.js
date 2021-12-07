@@ -32,4 +32,26 @@ function assignActive() {
     }
 }
 
+//------------------------------------------------------------------------------------------
+//                                Account Forms 
+//------------------------------------------------------------------------------------------
 
+var current;
+var login = document.getElementById("login");
+var create = document.getElementById("create");
+create.style.display = "none";
+function swap(to){
+    var too = to.id;
+    if (too == "toCreate") {
+        login.style.display = "none";
+        create.style.display = "block";
+    }
+    else if (too == "toLogin"){
+        create.style.display = "none";
+        login.style.display = "block";
+    }
+    else {
+        console.log("Error in swap()");
+        console.log(too);
+    }
+}

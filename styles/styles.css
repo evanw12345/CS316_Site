@@ -70,18 +70,7 @@ header {
     padding: 0.5% 1%;
 }
 
-.nav button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    padding: 0.25%;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.nav a:hover, button:hover {
+.nav a:hover {
     background-color: #838383;
     color: var(--nav-blue);
 }
@@ -104,7 +93,7 @@ header {
 }
 
 .containercontainer {
-    width: 75%;
+    width: 85%;
     background-color: var(--container-backgound-color);
     padding: 0.75%;
     border-radius: 15px;
@@ -123,13 +112,13 @@ header {
 .contcard {
     background-color: white;
     border: 1px black solid;
-    padding: 2%;
+    padding: 1%;
     border-radius: 10px;
     flex: 1 1 23%;
     display: flex;
     flex-flow: column wrap;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
+    justify-items: center;
     margin: 1%;
     transition: ease-in-out 0.25s;
 }
@@ -183,26 +172,40 @@ header {
     flex: 2 0 48%;
 }
 
+#usrUpload {
+    width: 75%;
+}
+
+#usrUpload fieldset {
+    border-radius: 15px;
+}
+
 @media (max-width: 1150px) {
     .nav a {
         padding: 1% 2%;
     }
+
     .imagecontainercontainer {
         width: 100%;
     }
+
     .containercontainer {
         width: 100%;
     }
+
     .altcard {
         width: 100%;
         margin: 4px;
     }
+
     .contcard {
         flex: 1 1 48%;
     }
+
     .imagecard {
         flex: 1 1 48%;
     }
+
     .imagecard:hover {
         transform: scale(1);
     }
@@ -212,6 +215,7 @@ header {
     .contcard {
         flex: 1 1 100%;
     }
+
     .imagecard {
         flex: 1 1 50%;
     }
@@ -240,12 +244,4 @@ header {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-#usrUpload {
-    width: 75%;
-}
-
-#usrUpload fieldset {
-    border-radius: 15px;
 }
