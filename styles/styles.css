@@ -112,7 +112,7 @@ header {
 .contcard {
     background-color: white;
     border: 1px black solid;
-    padding: 1%;
+    padding: 2%;
     border-radius: 10px;
     flex: 1 1 23%;
     display: flex;
@@ -170,6 +170,9 @@ header {
 
 .card1 {
     flex: 2 0 48%;
+}
+.card2 {
+    flex: 2 0 90%;
 }
 
 #usrUpload {

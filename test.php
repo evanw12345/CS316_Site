@@ -2,7 +2,7 @@
 <div class="containercontainer" style="background-color: rgba(0,0,0,0.1);">
     <div class="contcard">
         <?php
-        include_once './handlers/database.inc.php';
+        require_once './handlers/database.inc.php';
         $sql = "SELECT ID, fname, lname, street_address FROM addresses ORDER BY ID;";
         $result = $conn->query($sql);
         echo "<table class='usrList'>";

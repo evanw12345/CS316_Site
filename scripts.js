@@ -55,3 +55,7 @@ function swap(to){
         console.log(too);
     }
 }
+
+function test() {
+    
+}

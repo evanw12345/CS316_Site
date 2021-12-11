@@ -1,7 +1,44 @@
-<?php include_once 'common.php';?>
+<?php include_once 'common.php'; ?>
+
 <body>
     <div class=containercontainer>
         <div class="contcontainer">
+            <?php
+            if (isset($_GET["create"])) {
+                if ($_GET["create"] == "success") {
+                    echo '<div class="contcard card2">
+                    <h2>Welcome ' . $_GET["user"] . '!</h2>
+                    <p>You have successfully created an account!</p>
+                    <p>Click the plus icon in the top right to upload content</p>
+                    </div>';
+                } else if ($_GET["create"] == "user_e") {
+                    echo '<div class="contcard card2">
+                    <h2>Sorry, the username: ' . $_GET["user"] . ' was already taken.</h2>
+                    <p>Please try again.</p>
+                    </div>';
+                }
+            }
+            if (isset($_GET["login"])) {
+                if ($_GET["login"] == "success") {
+                    echo '<div class="contcard card2">
+                    <h2>Welcome back ' . $_SESSION["username"] . '!</h2>
+                    <p>' . $_SESSION["access"] . '</p>
+                    <p>Click the plus icon in the top right to upload content or your username to view your content</p>
+                    </div>';
+                } else if ($_GET["login"] == "user_e") {
+                    echo '<div class="contcard card2">
+                    <h2>Sorry, the username: ' . $_GET["user"] . ' doesn\'t exist</h2>
+                    <p>Please try again.</p>
+                    </div>';
+                } else if ($_GET["login"] == "pass_e") {
+                    echo '<div class="contcard card2">
+                    <h2>Sorry, the password for: ' . $_GET["user"] . ' is incorrect</h2>
+                    <p>Please try again.</p>
+                    </div>';
+                }
+            }
+
+            ?>
             <div class="card1 contcard">
                 <h2>CS316-001 Project 6: Evan Wells</h2>
                 <p>The internet sample has revolutionized society. There are many wonderful things accessable with the
@@ -38,4 +75,4 @@
             </div>
         </div>
     </div>
-<?php include_once 'footer.php'?>
+    <?php include_once 'footer.php' ?>

@@ -25,9 +25,7 @@
                         <label for="username">Username:</label>
                         <input type="text" name="username" required><br>
                         <label for="pswd">Password:</label>
-                        <input type="password" name="pswd" title="Password must include a number, uppercase letter, and be at least 8 characters." required><br>
-                        <!-- <label for="repeat">Repeat password:</label>
-                        <input type="password" name="repeat" title="Password must include a number, uppercase letter, and be at least 8 characters." required><br> -->
+                        <input type="password" pattern="(?=.*[A-Z])(?=.*\d).{8,}" name="pswd" title="Password must include a number, uppercase letter, and be at least 8 characters." required><br>
                         <button type="submit" name="create">Create</button>
                     </div>
                 </form>

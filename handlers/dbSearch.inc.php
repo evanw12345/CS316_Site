@@ -10,26 +10,12 @@
         <option value="admin">Administrator</option>
         <option value="user">User</option>
     </select>
-    <input type="submit" name="Search" value="Search">
+    <input type="submit" name="Search">
 </form>
 
 <?php
-require_once "database.inc.php";
-function buildTable($result)
-{
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo "<tr>";
-            echo "<td>" . $row["username"] . "</td>";
-            echo "<td>" . $row["email"] . "</td>";
-            echo "<td>" .  $row["numPosts"] . "</td>";
-            echo "<td>" . $row["dateCreated"] . "</td>";
-            echo "<td>" . $row["access"] . "</td>";
-        }
-    } else {
-        echo "0 results";
-    }
-}
+require_once 'database.inc.php';
+require_once "misc.inc.php";
 $sql_all = "SELECT * FROM users;";
 if (isset($_POST["Search"])) {
     $sql = "SELECT * FROM users WHERE ";
@@ -45,7 +31,7 @@ if (isset($_POST["Search"])) {
             echo "Email: $email ";
         }
         if ($type > 0) {
-            $sql .= "AND access LIKE '%$type%' ";
+            $sql .= "AND access LIKE '$type' ";
             echo "Account Type: $type";
         }
         trim($sql);
