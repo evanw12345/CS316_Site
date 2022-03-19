@@ -1,6 +1,7 @@
 <?php
 require_once 'database.inc.php';
 require_once "misc.inc.php";
+
 if(isset($_POST["login"])){
     $user = $_POST["username"];
     $canLogin = verifyUser($conn, $user, $_POST["pswd"]);

@@ -2,13 +2,13 @@
 <div class="containercontainer">
     <div class="contcontainer">
         <div class="contcard">
-            <form id="usrUpload" action="http://examples.funwebdev.com/process.php" method="POST">
+            <form id="usrUpload" action="./handlers/fileUpload.inc.php" method="POST">
                 <fieldset>
                     <label>User Upload</label><br>
                     <label for="title">Post title</label>
                     <input type="text" id="title" name="title" required><br>
                     <label for="text">Text</label><br>
-                    <textarea name="postContent" id="postContent" cols="30" rows="5"></textarea><br>
+                    <textarea name="desc" id="desc" cols="30" rows="5"></textarea><br>
                     <input type="file" id="myFile" name="filename"><br><br>
                     <select id="tag" name="tag">
                         <option>Select a tag</option>
@@ -23,10 +23,10 @@
                             <option>Help</option>
                         </optgroup>
                     </select><br><br>
-                    <input type="reset"><input type="submit"><br>
+                    <input type="reset"><input type="submit" name="submit"><br>
                 </fieldset>
             </form>
         </div>
     </div>
 </div>
-<?php include_once 'footer.php'?>
+<?php include_once 'footer.php' ?>

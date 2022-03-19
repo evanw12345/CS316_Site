@@ -1,4 +1,5 @@
 <?php
+session_start();
 function userExist($conn, $user)
 {
     $sql = "SELECT * FROM users WHERE username = '$user';";
